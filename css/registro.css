@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.izq {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+    max-width: 480px;
+    width: 100%;
+}
+
+.izq form {
+    padding: 30px;
+}
+
+h1 {
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 25px;
+    font-weight: 700;
+}
+
+.nombre {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.nombre div {
+    flex: 1;
+}
+
+.izq label {
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 5px;
+    margin-top: 15px;
+    display: block;
+}
+
+.nombre label {
+    margin-top: 0;
+}
+
+.izq input {
+    background: rgba(255, 255, 255, 0.12);
+    border: 1.5px solid rgba(255, 255, 255, 0.25);
+    border-radius: 12px;
+    height: 42px;
+    width: 100%;
+    padding: 0 15px;
+    color: white;
+    font-size: 15px;
+    font-family: 'Nunito', sans-serif;
+    margin-bottom: 15px;
+}
+
+.izq input:focus {
+    outline: none;
+    border-color: rgba(255, 255, 255, 0.6);
+    background: rgba(255, 255, 255, 0.18);
+}
+
+.izq input::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.izq .button {
+    background: linear-gradient(135deg, #ff6b9d, #e944e1);
+    border: none;
+    border-radius: 12px;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    height: 45px;
+    width: 160px;
+    margin: 20px auto 15px;
+    display: block;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.izq .button:hover {
+    transform: translateY(-2px);
+}
+
+.izq form div:last-child {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.izq form div:last-child a {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.izq form div:last-child a:hover {
+    color: white;
+}
+
+
+@media (max-width: 768px) {
+    .izq {
+        margin: 10px;
+    }
+    
+    .izq form {
+        padding: 25px;
+    }
+    
+    .nombre {
+        flex-direction: column;
+        gap: 0;
+    }
+    
+    .izq .button {
+        width: 100%;
+    }
+}
